@@ -1,0 +1,272 @@
+[ 2016-12-13T17:41:53+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.032274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032401s ]
+NOTIC: [8] Undefined variable: SESSION /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 35 行.
+NOTIC: [8] Undefined index: username /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 39 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019169s ]
+
+[ 2016-12-13T17:41:54+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: SESSION /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 35 行.
+NOTIC: [8] Undefined index: username /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 39 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000125s ]
+
+[ 2016-12-13T17:42:37+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: SESSION /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0356s ]
+SQL: SELECT * FROM `tp_user` WHERE `username` = 'null' AND `password` = 'null' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000238s ]
+
+[ 2016-12-13T17:42:54+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/reg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0814s ]
+SQL: SELECT * FROM `tp_user` WHERE `username` = 'yuyi' LIMIT 1   [ RunTime:0.0008s ]
+SQL: INSERT INTO `tp_user` (`username`,`password`,`nickname`) VALUES ('yuyi','123456','yuyu') [ RunTime:0.0926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002139s ]
+
+[ 2016-12-13T17:44:13+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined variable: SESSION /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0337s ]
+SQL: SELECT * FROM `tp_user` WHERE `username` = 'null' AND `password` = 'null' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000262s ]
+
+[ 2016-12-13T17:44:29+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: SESSION /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tp_user` WHERE `username` = 'null' AND `password` = 'null' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000226s ]
+
+[ 2016-12-13T17:45:17+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: SESSION /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_user` WHERE `username` = 'null' AND `password` = 'null' LIMIT 1   [ RunTime:0.0319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000212s ]
+
+[ 2016-12-13T17:48:14+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8] Undefined variable: SESSION /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0565s ]
+SQL: SELECT * FROM `tp_user` WHERE `username` = 'null' AND `password` = 'null' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2016-12-13T17:48:24+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: SESSION /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `tp_user` WHERE `username` = 'yuyi' AND `password` = '123456' LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000245s ]
+
+[ 2016-12-13T17:48:24+08:00 ] 192.168.1.135 /newssystem/index.php/Home/News/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `tp_news`  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000172s ]
+
+[ 2016-12-13T17:49:13+08:00 ] 192.168.1.135 /newssystem/index.php/Home/News/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000193s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0784s ]
+SQL: SELECT * FROM `tp_news`  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000225s ]
+
+[ 2016-12-13T17:49:17+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2016-12-13T17:49:17+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: SESSION /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `tp_user` WHERE `username` = 'yuyi' AND `password` = '123456' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000227s ]
+
+[ 2016-12-13T17:49:21+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000129s ]
+
+[ 2016-12-13T17:49:30+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: SESSION /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `tp_user` WHERE `username` = 'yuyi' AND `password` = '123456' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2016-12-13T17:50:09+08:00 ] 192.168.1.135 /newssystem/index.php/Home/News/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0655s ]
+SQL: SELECT * FROM `tp_news`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000204s ]
+
+[ 2016-12-13T17:50:09+08:00 ] 192.168.1.135 /newssystem/index.php/Home/News/getlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_news`  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000271s ]
+
+[ 2016-12-13T17:50:40+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/reg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined index: username /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 6 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2016-12-13T17:50:40+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/reg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+NOTIC: [8] Undefined index: username /Applications/MAMP/htdocs/newssystem/Application/Home/Controller/UserController.class.php 第 6 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-12-13T17:51:05+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000248s ]
+
+[ 2016-12-13T17:51:06+08:00 ] 192.168.1.135 /newssystem/index.php/Home/User/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000261s ]
+

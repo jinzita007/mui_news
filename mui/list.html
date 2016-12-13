@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){
+				var logout = document.getElementById("logout");
+				logout.addEventListener('tap',function(){
+					mui.ajax('http://192.168.1.135/newssystem/index.php/Home/User/logout',{
+						dataType:'json',
+						type:'get',
+						timeout:10000,
+						success:function(data){
+							if(data.result==1){
+								plus.ui.toast(data.data);
+								//注销成功，回到登录界面
+								mui.openWindow({
+									url:'index.html',
+									id:'login'
+								});
+							}else{
+								plus.ui.toast(data.data);
+							}
+						}
+					})
+				})
+				mui.ajax('http://192.168.1.135/newssystem/index.php/Home/News/getlist',{
+					dataType:'json',
+					type:'get',
+					timeout:10000,
+					success:function(data){
+						var list = document.getElementById("list");
+						finallist='';
+						for(i=data.length-1;i>=0;i--){
+							finallist=finallist+'<li data-id="'+i+'" class="mui-table-view-cell mui-media"><a href="javascript:;"><div class="mui-media-body">'+data[i].title+'<p class="mui-ellipsis">'+data[i].content+'</p></div></a></li>' 
+						}
+						list.innerHTML=finallist;
+						mui('#list').on('tap','li',function(){
+							mui.openWindow({
+								url:'detail.html',
+								id:'detail',
+								extras:{
+									title:data[this.getAttribute('data-id')].title,
+									author:data[this.getAttribute('data-id')].author,
+									pubtime:data[this.getAttribute('data-id')].pubtime,
+									content:data[this.getAttribute('data-id')].content
+								}
+							})
+						})
+					},
+					error:function(){
+						//
+					}
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <h1 class="mui-title">新闻</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-content-padded">
+			    <h4>你好，欢迎登录羽翼新闻端
+			        <button type="button" class="mui-btn" id="logout">注销</button>
+			    </h4>
+			       
+			</div>
+		   <ul class="mui-table-view" id="list">
+		     
+		   </ul>
+		</div>
+	</body>
+
+</html>

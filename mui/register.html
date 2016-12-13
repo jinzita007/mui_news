@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){
+				var username = document.getElementById("username");
+				var password = document.getElementById("password");
+				var nickname = document.getElementById("nickname");
+				var reg = document.getElementById("reg");
+				reg.addEventListener('tap',function(){
+					if(username.value.length==0){
+						plus.ui.toast("用户名不能为空");
+						return;
+					}
+					if(password.value.length==0){
+						plus.ui.toast("密码不能为空");
+						return;
+					}
+					if(nickname.value.length==0){
+						plus.ui.toast("昵称不能为空");
+						return;
+					}
+					mui.ajax('http://192.168.1.135/newssystem/index.php/Home/User/reg',{
+						data:{
+							username:username.value,
+							password:password.value,
+							nickname:nickname.value
+						},
+						dataType:'json',
+						type:'POST',
+						timeout:10000,
+						success:function(data){
+							if(data.result==1){
+								plus.ui.toast(data.data);
+								mui.back();
+							}else{
+								plus.ui.toast(data.data);
+							}
+						},
+						error:function(){
+							
+						}
+					})
+				})
+			})
+		</script>
+		<style type="text/css">
+			.mui-content{
+				margin-top: 12px;
+			}
+			.mui-btn{
+				width: 95%;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">注册</h1>
+		</header>
+		<div class="mui-content">
+		    <form class="mui-input-group">
+		        <div class="mui-input-row">
+		            <label>账号</label>
+		            <input type="text" class="mui-input-clear" placeholder="请输入账号" id="username">
+		        </div>
+		        <div class="mui-input-row">
+		            <label>密码</label>
+		            <input type="password" class="mui-input-clear" placeholder="请输入密码" id="password">
+		        </div>
+		        <div class="mui-input-row">
+		            <label>昵称</label>
+		            <input type="text" class="mui-input-clear" placeholder="请输入昵称" id="nickname">
+		        </div>
+		    </form>
+		     <div class="mui-content-padded" align="center">
+		         <button type="button" class="mui-btn mui-btn-blue" id="reg">注册</button>
+		     </div>
+		</div>
+	</body>
+ 
+</html>

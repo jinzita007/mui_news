@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	mui.plusReady(function(){
+      		var tempusername=plus.storage.getItem('username');
+      		var temppassword=plus.storage.getItem('password');
+      		if(tempusername!=""&&temppassword!=""){
+      			mui.ajax('http://192.168.1.135/newssystem/index.php/Home/User/login',{
+      				data:{
+      					username:tempusername,
+      					password:temppassword
+      				},
+      				dataType:'json',
+      				type:"POST",
+      				timeout:10000,
+      				success:function(data){
+      					//{"result":1}
+      					if(data.result==1){
+      						//登录成功
+      						plus.ui.toast("登录成功");
+      						plus.storage.setItem('username',tempusername);
+      						plus.storage.setItem('password',temppassword);
+      						mui.openWindow({
+      							url:'list.html',
+      							id:'list'
+      						})
+      					}else{
+      						//登录失败
+      						plus.ui.toast(data.data);
+      					}
+      				},
+      				error:function(){
+      					//
+      				}
+      			})
+      		}
+      		var reg = document.getElementById("reg");
+      		var login = document.getElementById("login");
+      		reg.addEventListener('tap', function(){
+      			mui.openWindow({
+      				url:'register.html',
+      				id:'reg'
+      			})
+      		});
+      		login.addEventListener('tap',function(){
+      			var username = document.getElementById("username");
+      			var password = document.getElementById("password");
+      			if(username.value.length==0){
+      				plus.ui.toast("用户名不能为空");
+      				return;
+      			}
+      			if(password.value.length==0){
+      				plus.ui.toast("密码不能为空");
+      				return;
+      			}
+      			mui.ajax('http://192.168.1.135/newssystem/index.php/Home/User/login',{
+      				data:{
+      					username:username.value,
+      					password:password.value
+      				},
+      				dataType:'json',
+      				type:'POST',
+      				timeout:10000,
+      				success:function(data){
+      					//{"reslut":1}
+      					if(data.result==1){
+      						//登录成功
+      						plus.ui.toast("登录成功");
+      						//将用户名放进本地的存储中
+      						plus.storage.setItem('username',username.value);
+      						plus.storage.setItem('password',password.value);
+      						mui.openWindow({
+      							url:'list.html',
+      							id:'list'
+      						})
+      					}else{
+      						//登录失败
+      						plus.ui.toast(data.data);
+      					}
+      				},
+      				error:function(){
+      					//
+      				}
+      			})	
+      		})
+      	})
+    </script>
+    <style type="text/css">
+    	.mui-content{
+    		margin-top: 12px;
+    	}
+    	.mui-btn{
+    		width: 80px;
+    	}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">登录</h1>
+	</header>
+	<div class="mui-content">
+	    <form class="mui-input-group">
+	        <div class="mui-input-row">
+	            <label>账号</label>
+	            <input type="text" class="mui-input-clear" placeholder="请输入账号" id="username">
+	        </div>
+	        <div class="mui-input-row">
+	            <label>密码</label>
+	            <input type="password" class="mui-input-clear" placeholder="请输入密码" id="password">
+	        </div>
+	    </form>
+	    <div class="mui-content-padded" align="center">
+	        <button type="button" class="mui-btn mui-btn-blue" id="login">登录</button>
+	        <button type="button" class="mui-btn mui-btn-green" id="reg">注册</button>
+	    </div>
+	</div>
+</body>
+</html>
